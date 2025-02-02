@@ -1,0 +1,6 @@
+{
+    "require": {
+        "friendsofphp/php-cs-fixer": "^3.68",
+        "phpyh/coding-standard": "^2.6"
+    }
+}

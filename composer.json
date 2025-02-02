@@ -1,0 +1,45 @@
+{
+    "name": "kenny1911/doctrine-aggrolock",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Kenny1911",
+            "email": "o-muzyka@mail.ru"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "cs": "tools/php-cs-fixer/vendor/bin/php-cs-fixer check",
+        "cs-fix": "tools/php-cs-fixer/vendor/bin/php-cs-fixer fix",
+        "psalm": "tools/psalm/vendor/bin/psalm",
+        "phpunit": "phpunit",
+        "require-checker": "tools/composer-require-checker/vendor/bin/composer-require-checker check",
+        "checks": [
+            "@cs",
+            "@phpunit",
+            "@require-checker",
+            "@psalm --no-cache"
+        ]
+    },
+    "require": {
+        "php": "^8.1",
+        "doctrine/orm": "^2.15 || ^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kenny1911\\DoctrineAggroLock\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kenny1911\\DoctrineAggroLock\\Test\\": "tests/"
+        }
+    }
+}

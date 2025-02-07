@@ -3,6 +3,8 @@
     "type": "library",
     "license": "MIT",
     "minimum-stability": "stable",
+    "description": "Doctrine ORM extension, that supports optimistic lock for aggregate entities",
+    "keywords": ["doctrine", "optimistic", "lock", "ddd", "aggregate", "root", "entity", "association", "relation"],
     "authors": [
         {
             "name": "Kenny1911",
